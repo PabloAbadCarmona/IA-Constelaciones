@@ -65,7 +65,8 @@ public class ConstelacionesLienzo extends JComponent {
     private double distancia(int x1, int y1, int x2, int y2) {
         return Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow(y1 - y2, 2));
     }
-
+    
+    //Código heradado de anterior proyecto
     public boolean insertarArista(int ni, int nf, int color) {
         Nodo ini = null;
         Nodo fin = null;
@@ -85,6 +86,7 @@ public class ConstelacionesLienzo extends JComponent {
 
     }
     
+    //Método para el proyecto
     public boolean insertarArista(int x1,int y1, int x2, int y2, int color){
         //CASO INICIAL
         Arista a = new Arista(x1, y1, x2, y2);
@@ -147,7 +149,8 @@ public class ConstelacionesLienzo extends JComponent {
         System.out.println(n + " " + x + " " + y);
         return true;
     }
-
+    
+    //Si un punto genérico (x,y) se encuentra en las inmediaciones de un nodo
     public int perteneceNodo(int x, int y) {
         int r = 0;
         for (Nodo nodo : nodos) {

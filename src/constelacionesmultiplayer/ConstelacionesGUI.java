@@ -45,7 +45,10 @@ public class ConstelacionesGUI extends javax.swing.JFrame implements KeyListener
             contador = new Thread(this);
             contador.start();
             System.out.println("iniciado");
+            
         }
+        
+        
         
         @Override
         public void run() {
