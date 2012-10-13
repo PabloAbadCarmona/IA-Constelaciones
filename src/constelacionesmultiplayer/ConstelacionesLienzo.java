@@ -151,7 +151,7 @@ public class ConstelacionesLienzo extends JComponent {
     public int perteneceNodo(int x, int y) {
         int r = 0;
         for (Nodo nodo : nodos) {
-            if (distancia(x, y, nodo.x + 2, nodo.y + 2) < 30) {
+            if (distancia(x, y, nodo.x + 2, nodo.y + 2) < 20) {
                 r = nodo.n;
             }
         }
